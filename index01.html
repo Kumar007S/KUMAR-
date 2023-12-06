@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/040d7f1731.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="navs">
+                <nav class="circle">
+                    <img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701108831/left-arrow_gyfvds.png" class="icon1" />
+                </nav>
+                <nav class="circle" id="menuitems">
+                    <img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701108937/menu_x0hiep.png" class="icon1" />
+                </nav>
+            </div>
+            <div class="tab-items">
+                <button class="selected-tab" id="all">All</button>
+                <button class="tab-btn" id="romantic">Romantic</button>
+                <button class="tab-btn" id="melodious">Melodious</button>
+            </div>
+            <div class="tab-items">
+                <button class="tab-btn" id="comedy">Comedy</button>
+                <button class="tab-btn" id="drama">Drama</button>
+                <button class="tab-btn" id="action">Action</button>
+            </div>
+            <img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701086664/Yako-Summane-2023-250x250_tby8dg.jpg" id="songimage" class="song-img" />
+            <h3 class="song-title" id="songTitle"></h3>
+            <audio id="song">
+                <source src="https://res.cloudinary.com/dlovqnrza/video/upload/v1701086688/iSongs.info_01_-_Yako_Summane_vlthnt.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress" />
+            <div class="controls">
+                <div class="c-btn" onclick="prevSong()"><img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701110685/backward-arrows-couple_dsgyeh.png" class="control-btn" /></div>
+                <div class="c-btn"><img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701111526/play-button-arrowhead_rutg8u.png" class="control-btn" id="ctrlIcon" onclick="playPause()" /></div>
+                <div class="c-btn" onclick="nextSong()"><img src="https://res.cloudinary.com/dlovqnrza/image/upload/v1701111428/fast-forward_xkigqc.png" class="control-btn" /></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
